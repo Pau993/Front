@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador de Tareas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    #taskForm {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .completed {
+      text-decoration: line-through;
+      color: #8888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Administrador de Tareas</h1>
+  
+  <form id="taskForm">
+    <input type="text" id="newTask" placeholder="Agregar nueva tarea" required>
+    <button type="submit">Agregar</button>
+  </form>
+
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

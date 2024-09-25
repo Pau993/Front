@@ -5,7 +5,7 @@ trigger:
       - develop  # Rama de desarrollo si la usas
 
 pool:
-  vmImage: 'ubuntu-latest'  # Imagen de la máquina virtual
+  vmImage: 'windows-latest'  # Imagen de la máquina virtual
 
 steps:
 - task: NodeTool@0

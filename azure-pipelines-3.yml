@@ -5,12 +5,16 @@ trigger:
       - develop  # Rama de desarrollo si la usas
 
 pool:
-  vmImage: 'windows-latest'  # Imagen de la máquina virtual
+  vmImage: 'ubuntu-latest'  # Imagen de la máquina virtual
 
 steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '16.2'
+
+- script: |
+    dir $(System.DefaultWorkingDirectory)
+  displayName: 'List directory contents'
 
 - script: |
     npm install

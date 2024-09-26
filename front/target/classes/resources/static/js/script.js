@@ -85,7 +85,7 @@ function renderTask(task) {
   row.id = `task-${task.id}`;
   row.innerHTML = `
     <td>${task.id}</td>
-    <td>${task.description}</td>
+    <td>${task.description.charAt(0).toUpperCase() + task.description.slice(1)}</td> <!-- Formato de la primera letra en mayúscula -->
     <td>${task.completed ? 'Completada' : 'Pendiente'}</td>
   `;
   taskList.appendChild(row);

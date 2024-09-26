@@ -134,6 +134,4 @@ function deleteTask() {
 // Inicializar los eventos
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('menu').style.display = 'block';
-  loadTasks();
 });
-

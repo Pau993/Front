@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:8080/api/tasks'; // Cambia esta URL según la configuración de tu backend.
+const apiUrl = 'http://localhost:8080/tasks';
 
 // Elementos del DOM
 const taskForm = document.getElementById('taskForm');
@@ -134,5 +134,6 @@ function deleteTask() {
 // Inicializar los eventos
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('menu').style.display = 'block';
+  loadTasks();
 });
 

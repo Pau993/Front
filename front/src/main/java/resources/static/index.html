@@ -6,26 +6,47 @@
   <title>Administrador de Tareas</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       background-color: #f4f4f9;
       margin: 0;
       padding: 20px;
     }
     h1 {
       text-align: center;
+      color: #333;
     }
-    #menu, #taskForm, #taskTable, #completeTaskForm, #deleteTaskForm {
+    #menu, #taskForm, #completeTaskForm, #deleteTaskForm {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
     }
-    input[type="text"], select {
+    #menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    select, input[type="text"] {
       width: 300px;
       padding: 10px;
       font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
     }
     button {
+      background-color: #5cb85c;
+      color: white;
+      border: none;
       padding: 10px 20px;
       font-size: 16px;
-      margin-left: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #4cae4c;
     }
     table {
       width: 100%;
@@ -39,19 +60,17 @@
       padding: 10px;
       text-align: left;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
+    th {
+      background-color: #f2f2f2;
+      color: #333;
     }
-    li {
-      background: #fff;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 5px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    #taskList {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    tr:hover {
+      background-color: #f9f9f9;
     }
   </style>
 </head>
@@ -96,9 +115,7 @@
     <button type="button" onclick="deleteTask()">Eliminar tarea</button>
   </form>
 
-  <script>
-    script.js
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
